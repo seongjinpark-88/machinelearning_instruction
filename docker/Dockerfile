@@ -5,9 +5,9 @@ FROM ubuntu:16.04
 MAINTAINER Seongjin Park <seongjinpark@email.arizona.edu>
 
 # ENV and ARG
-ARG HOME=$HOME/hufs/
+ARG HOME=/scratch
 ENV SHELL=/bin/bash
-ENV ML_PATH=${HOME}/machinelearning_hufs
+ENV ML_PATH=${HOME}/machinelearning_instruction
 ENV ML_INST=${ML_PATH}/egs
 
 # Install dependencies
@@ -64,8 +64,9 @@ RUN pip3 install tensorflow
 
 # clone machinelearning_hufs
 WORKDIR ${HOME}
-RUN git clone https://github.com/seongjinpark-88/machinelearning_hufs.git
+RUN git clone https://github.com/seongjinpark-88/machinelearning_instruction.git
 WORKDIR ${ML_PATH}
-RUN git fetch && git checkout origin
+RUN git fetch 
+RUN git checkout machinelearning_instruction
 
 WORKDIR ${ML_INST}
