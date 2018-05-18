@@ -16,5 +16,5 @@ done
 
 # cannot link all the way at kaldi root directory
 docker run -it --rm -p $port:$port \
-    -v `pwd`/egs:$HOME/hufs/machinelearning_hUFS/egs \
-machinelearning_hufs
+    -v `pwd`/egs:/scratch/machinelearning_instruction/egs \
+machinelearning_instruction
