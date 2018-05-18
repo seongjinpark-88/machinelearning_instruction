@@ -15,6 +15,6 @@ while getopts "p:" opt; do
 done
 
 # cannot link all the way at kaldi root directory
-docker run -it --rm -p $port:$port \
+docker run -it --rm -p $port:$port -p 6006:6006\
     -v `pwd`/egs:/scratch/machinelearning_instruction/egs \
 machinelearning_instruction

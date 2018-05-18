@@ -53,8 +53,11 @@ RUN pip install --upgrade pip
 # install jupyter kernel for bash
 RUN pip install jupyter bash_kernel ; python -m bash_kernel.install
 
+RUN pip3 install jupyter bash_kernel ; python3 -m bash_kernel.install
+
 # install numpy and plotly and PyNLPl and graphviz
 RUN pip install plotly pynlpl graphviz scipy Theano
+RUN pip install keras
 RUN pip3 install keras
 
 # tensorflow
@@ -67,6 +70,6 @@ WORKDIR ${HOME}
 RUN git clone https://github.com/seongjinpark-88/machinelearning_instruction.git
 WORKDIR ${ML_PATH}
 RUN git fetch 
-RUN git checkout machinelearning_instruction
+RUN git checkout origin
 
 WORKDIR ${ML_INST}
