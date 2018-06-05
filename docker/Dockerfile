@@ -49,6 +49,7 @@ RUN apt-get update -qq \
 
 # Update pip
 RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip
 
 # install jupyter kernel for bash
 RUN pip install jupyter bash_kernel ; python -m bash_kernel.install
@@ -56,12 +57,14 @@ RUN pip install jupyter bash_kernel ; python -m bash_kernel.install
 RUN pip3 install jupyter bash_kernel ; python3 -m bash_kernel.install
 
 # install numpy and plotly and PyNLPl and graphviz
-RUN pip install plotly pynlpl graphviz scipy Theano
-RUN pip install keras matplotlib gensim
-RUN pip3 install keras matplotlib gensim
+RUN pip install plotly pynlpl graphviz scipy Theano numpy
+RUN pip install keras matplotlib gensim nltk
+RUN pip3 install keras matplotlib gensim nltk numpy
+
 
 # tensorflow
 
+RUN pip install tensorflow
 RUN pip3 install tensorflow
 
 

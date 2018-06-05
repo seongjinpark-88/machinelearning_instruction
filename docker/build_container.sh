@@ -4,7 +4,7 @@
 
 
 gpu=false
-mem=4g
+mem=6g
 
 while getopts "gm:" opt; do
     case ${opt} in
