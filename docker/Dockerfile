@@ -57,8 +57,8 @@ RUN pip3 install jupyter bash_kernel ; python3 -m bash_kernel.install
 
 # install numpy and plotly and PyNLPl and graphviz
 RUN pip install plotly pynlpl graphviz scipy Theano
-RUN pip install keras
-RUN pip3 install keras
+RUN pip install keras matplotlib gensim
+RUN pip3 install keras matplotlib gensim
 
 # tensorflow
 
