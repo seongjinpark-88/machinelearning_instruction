@@ -73,6 +73,6 @@ WORKDIR ${HOME}
 RUN git clone https://github.com/seongjinpark-88/machinelearning_instruction.git
 WORKDIR ${ML_PATH}
 RUN git fetch 
-RUN git checkout origin
+RUN git checkout
 
 WORKDIR ${ML_INST}
