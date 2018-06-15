@@ -52,14 +52,23 @@ RUN pip install --upgrade pip
 RUN pip3 install --upgrade pip
 
 # install jupyter kernel for bash
-RUN pip install jupyter bash_kernel ; python -m bash_kernel.install
+RUN pip3 install jupyter 
+RUN pip3 install jupyter_client
+RUN pip3 install --no-cache-dir bash_kernel 
+RUN python3 -m bash_kernel.install
 
-RUN pip3 install jupyter bash_kernel ; python3 -m bash_kernel.install
+RUN pip install jupyter
+RUN pip install jupyter_client
+RUN pip install --no-cache-dir bash_kernel 
+# RUN python -m bash_kernel.install
+
 
 # install numpy and plotly and PyNLPl and graphviz
 RUN pip install plotly scipy Theano numpy
 RUN pip install keras matplotlib gensim nltk scikit-learn pillow h5py
 RUN pip3 install keras matplotlib gensim nltk numpy scikit-learn pillow h5py scipy
+RUN python -m nltk.downloader punkt
+RUN python3 -m nltk.downloader punkt
 
 
 # tensorflow
