@@ -1,4 +1,4 @@
-# MachineLearning-instruction - MachineLearning instruction @ HUFS
+# Deep Learning HUFS 2018
 
 # 1. Build Ubuntu
 FROM ubuntu:16.04
@@ -67,8 +67,6 @@ RUN pip install --no-cache-dir bash_kernel
 RUN pip install plotly scipy Theano numpy
 RUN pip install keras matplotlib gensim nltk scikit-learn pillow h5py
 RUN pip3 install keras matplotlib gensim nltk numpy scikit-learn pillow h5py scipy
-RUN python -m nltk.downloader punkt
-RUN python3 -m nltk.downloader punkt
 
 
 # tensorflow

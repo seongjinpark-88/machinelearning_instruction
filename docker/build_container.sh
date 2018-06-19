@@ -3,13 +3,13 @@
 # script to begin the docker build process
 
 
-gpu=false
-mem=6g
+win=false
+mem=4g
 
-while getopts "gm:" opt; do
+while getopts "wm:" opt; do
     case ${opt} in
-        g)
-            gpu=true
+        w)
+            win=true
             ;;
         m)
             mem=${OPTARG}
@@ -21,14 +21,14 @@ while getopts "gm:" opt; do
     esac
 done
 
-if [[ ${gpu} == true ]]; then
+if [[ ${win} == true ]]; then
     docker build \
-        -f Dockerfile \
+        -f WIN/Dockerfile \
         -m ${mem} \
         -t machinelearning_hufs ../
 else
     docker build \
-        -f Dockerfile \
+        -f UNIX/Dockerfile \
         -m ${mem} \
         -t machinelearning_instruction ../
 fi

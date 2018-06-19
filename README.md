@@ -29,7 +29,7 @@ sudo git fetch
 sudo git checkout
 ```
 
-모든 관련 자료들은 앞으로 `/scratch/machinelearning_instructional` 폴더 아래에서 진행됩니다. 
+모든 관련 자료들은 앞으로 `/scratch/machinelearning_instruction` 폴더 아래에서 진행됩니다. 
 
 * **Note:** `kaldi`에서와 마찬가지로 `Windows 10 Home`을 사용하시는 경우, 바탕화면에 `scratch` 폴더가 위치합니다. 그러므로 바탕화면의 `Docker Quickstart Terminal`을 관리자 권한으로 실행하신 후, 아래 명령어를 통해 `scratch` 폴더로 이동하시면 됩니다. 앞으로 `/scratch`로 표현된 부분을 `~/Desktop/scratch`로 입력하시면 됩니다. 
 
@@ -44,7 +44,7 @@ cd ~/Desktop/scratch
 
 ## Docker 및 Jupyter 실행
 
-실행하는 방법은 `kaldi`와 동일합니다. 미리 세팅은 이루어져 있으므로, `/scratch/machinelearning_instructional` 폴더로 이동하신 이후 `./start_container.sh` 명령어로 `Docker`를 실행하시고, `./start_jupyter` 명령어로 jupyter 노트북을 실행하시면 됩니다. 
+실행하는 방법은 `kaldi`와 동일합니다. 미리 세팅은 이루어져 있으므로, `/scratch/machinelearning_instruction` 폴더로 이동하신 이후 `./start_container.sh` 명령어로 `Docker`를 실행하시고, `./start_jupyter` 명령어로 jupyter 노트북을 실행하시면 됩니다. 
 
 **Note:** `kaldi`와 마찬가지로 Jupyter를 실행하는 노트북의 주소가 `0.0.0.0:8880` 대신 알파벳과 숫자의 나열로 나타나는 경우가 있습니다. `https://49xhjx~:8880/?token~` 부분을 복사하신 이후, `:8880` 앞의 부분을 0.0.0.0으로 변경하여 다시 열어주시면 됩니다. 
 
