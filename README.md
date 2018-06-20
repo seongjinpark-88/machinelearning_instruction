@@ -1,4 +1,4 @@
-# Deep Learning을 통한 언어분석
+#Deep Learning을 통한 언어분석
 
 기본적인 신경망 모델들을 `keras`를 이용하여 구현하였으며, 실제 언어학적인 측면에서 어떻게 활용할 수 있는지 살펴보는 것이 복적입니다. 
 
@@ -25,7 +25,7 @@ cd machinelearning_instruction
 # branch 다운로드
 sudo git fetch
 
-# 최신상태 업데이터
+# 최신상태 업데이트
 sudo git checkout
 ```
 
@@ -53,6 +53,20 @@ cd /c/Users/사용자이름/Desktop/scratch
 ```
 
 ## Docker 및 Jupyter 실행
+
+machinelearning_instruction/docker 폴더 안에는 `Docker` 환경을 구축할 수 있는 `build_container.sh` 파일이 포함되어 있습니다. 다음의 명령어를 입력하셔서 `Docker` 환경을 구축할 수 있습니다. 
+
+```bash
+# docker 폴더로 이동
+cd /scratch/machinelearning_instruction/docker
+
+# Linux/Mac
+sudo ./build_container.sh
+
+# Windows
+./build_container.sh -w
+
+```
 
 실행하는 방법은 `kaldi`와 동일합니다. 미리 세팅은 이루어져 있으므로, `/scratch/machinelearning_instruction` 폴더로 이동하신 이후 `./start_container.sh` 명령어로 `Docker`를 실행하시고, `./start_jupyter` 명령어로 jupyter 노트북을 실행하시면 됩니다. 
 

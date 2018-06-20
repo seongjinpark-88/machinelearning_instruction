@@ -25,7 +25,7 @@ if [[ ${win} == true ]]; then
     docker build \
         -f WIN/Dockerfile \
         -m ${mem} \
-        -t machinelearning_hufs ../
+        -t machinelearning_instruction ../
 else
     docker build \
         -f UNIX/Dockerfile \
