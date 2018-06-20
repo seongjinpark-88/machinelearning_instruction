@@ -4,7 +4,7 @@
 
 ## Docker 
 
-코드 실행에 필요한 툴은 `Docker`를 이용해서 설치할 수 있습니다. `Docker`를 설치 및 사용하는 방법은 [이 곳](https://github.com/seongjinpark-88/kaldi)을 참고해주세요. 
+코드 실행에 필요한 툴은 `Docker`를 이용해서 설치할 수 있습니다. `Docker`를 설치 및 사용하는 방법은 [이 곳](https://github.com/seongjinpark-88/kaldi_instructional)을 참고해주세요. 
 
 
 ## Installation
